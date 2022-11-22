@@ -1,12 +1,37 @@
-public class task3 {
-    public static void main(String[] args) {
-        String[] array = {"abcdefgabcabc", "abcgkjsdfkl", "bvxabchcbdf", "qwerabctwet", "abc"};
-        String value = "abc";
-        for (int i = 0; i < array.length; i++){
-            if (array[i].substring(0, 3).equals(value)){
-                System.out.println(i);
-            }
+//Дан массив nums = [3,2,2,3] и число val = 3
+// Если в массиве есть числа, равные, нужно перевести эти элементы в конец массива.
+
+public class task3 
+{
+    public static void main(String[] args)
+    {
+        int[] arr = new int[]{3,1,2,4,5,3};
+        int value  = 3;
+        for(int item : arr)
+        {
+            System.out.printf("%d ", item);
+        }
+        System.out.printf("\n");    
+        for (int i = 0; i<arr.length; i++)
+        {
+            
+            if (arr[i] == value)
+            {
+                for(int j=i; j<arr.length-1;j++)
+                {
+                    arr[j]=arr[j+1];
+                }
+                arr[arr.length - 1] = value;
             }
         }
 
+        for(int item : arr)
+        {
+            System.out.printf("%d ",item);
+        }     
+        
     }
+}
+
+
+

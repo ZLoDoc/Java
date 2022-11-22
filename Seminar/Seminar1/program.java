@@ -1,11 +1,11 @@
-import java.time.LocalDateTime;
-import java.util.Scanner;
+// import java.time.LocalDateTime;
+// import java.util.Scanner;
 
-/**
- * java_project
- */
-public class program {
-public static void main(String[] args){
+// /**
+//  * java_project
+//  */
+// public class program {
+// public static void main(String[] args){
 
     // String a = ("Hello World");
     // System.out.println(a);
@@ -35,24 +35,6 @@ public static void main(String[] args){
         //     System.out.printf("Добрый вечер, %s", name);
         //     scan.close();
 
-//         int[] arr = new int[]{1,1,0,1,1,1}; 
-//         // int[]newarr = new int[6];
-//         int max,count = 0;
-//         max =0;                                       
-//         for (int i=0;i<6;i++){
-//             System.out.printf("%d", arr[i]);
-//             if (arr[i] == 1) count++;           
-                       
-            
-//             if(count > max){
-//             max=count;                       
-//             }
-//             if(arr[i]==0) count =0;
-            
-            
-        
-//         }
-        
-//         System.out.println(max);
+
 // }
 // }
