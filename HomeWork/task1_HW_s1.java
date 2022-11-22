@@ -10,7 +10,7 @@ public class task1_HW_s1 {
         int sum =0;
         // int result = 0
         Scanner input =  new Scanner(System.in);
-        System.out.printf("int n: ");
+        System.out.printf("Введите число n: ");
         int n = input.nextInt();
         System.out.println(n);
         input.close();
@@ -18,11 +18,11 @@ public class task1_HW_s1 {
         for (int i =0;i<=n;i++){
             sum += i;
         }        
-        System.out.printf("Сумма чисел =%d \n",sum);
+        System.out.printf("Сумма чисел от 0 до " + n + " = %d \n",sum);
         
-        System.out.printf("Произведение чисел = %d",factorial(n));
+        System.out.printf("Произведение чисел от 0 до " + n + "  = %.1f",factorial(n));
     }              
-        static int factorial(int n) {
+        static double factorial(int n) {
             if (n == 0 || n == 1) {
                return 1;
             }
