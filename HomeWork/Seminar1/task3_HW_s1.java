@@ -1,6 +1,5 @@
 // Задание3.Реализовать простой калькулятор
-package HomeWork;
-
+package HomeWork.Seminar1;
 import java.util.Scanner;
 
 public class task3_HW_s1 {

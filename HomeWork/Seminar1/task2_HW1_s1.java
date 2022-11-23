@@ -1,5 +1,5 @@
 // Задание 2. Вывести все простые числа от 1 до 1000
-package HomeWork;
+package HomeWork.Seminar1;
 import java.util.Scanner;
 
 public class task2_HW1_s1 {

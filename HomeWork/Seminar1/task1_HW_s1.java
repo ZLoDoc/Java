@@ -1,5 +1,5 @@
 // Задача1 Вычислить сумму от 1 до N
-package HomeWork;
+package HomeWork.Seminar1;
 import java.util.Scanner;
 
 public class task1_HW_s1 { 
