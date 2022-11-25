@@ -11,7 +11,7 @@ public class task4_Sem2 {
         }
         System.out.println(myBuilder);
         FileWriter fw = new FileWriter("test100.txt");
-        fw.write(myBuilder.toString());
+        fw.write(myBuilder);
         fw.flush();
         fw.close();
     }
