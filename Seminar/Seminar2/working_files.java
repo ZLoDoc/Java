@@ -14,11 +14,11 @@ public class working_files {
         }
         
         FileWriter fileWriter = new FileWriter(file);
-        fileWriter.write("str1\n");
-        fileWriter.write("str2\n");        
-        fileWriter.flush();
+        // fileWriter.write("str1\n");
+        // fileWriter.write("str2\n");        
+        // fileWriter.flush();
 
-        FileReader fileReader = new FileReader(file);
+        // FileReader fileReader = new FileReader(file);
         
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         bufferedWriter.write("str3");
