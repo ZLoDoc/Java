@@ -1,14 +1,12 @@
-но€б. 26, 2022 3:11:51 AM HomeWork.Seminar2.task4_HW2_S2 main
+но€б. 27, 2022 11:10:38 PM HomeWork.Seminar2.task4_HW2_S2 main
 INFO: Program started
-но€б. 26, 2022 3:11:57 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The first number 4 inputed 
-но€б. 26, 2022 3:12:06 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The arifmetical sign + inputed 
-но€б. 26, 2022 3:12:08 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The second number 0 inputed 
-но€б. 26, 2022 3:12:08 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: Incorrect input will result in division by zero 
-но€б. 26, 2022 3:12:11 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The second number 0 inputed 
-но€б. 26, 2022 3:12:11 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: Incorrect input will result in division by zero 
+но€б. 27, 2022 11:10:42 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The first number 254 inputed 
+но€б. 27, 2022 11:10:46 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The arifmetical sign * inputed 
+но€б. 27, 2022 11:10:48 PM HomeWork.Seminar2.task4_HW2_S2 getNum
+INFO: Incorrect number input
+но€б. 27, 2022 11:10:59 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The second number 5 inputed 
+но€б. 27, 2022 11:10:59 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: Output the result of operation: 254 * 5 = 1†270

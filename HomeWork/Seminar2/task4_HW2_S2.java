@@ -9,11 +9,9 @@ import java.util.logging.*;
 public class task4_HW2_S2 {
 
     public static Logger logger = Logger.getLogger(task4_HW2_S2.class.getName());
-    public static void main(String[] args) throws SecurityException, IOException {
+    public static void main(String[] args) throws SecurityException, IOException {        
         
-        
-        Logger logger = Logger.getLogger(task4_HW2_S2.class.getName());
-        
+        Logger logger = Logger.getLogger(task4_HW2_S2.class.getName());        
         
         FileHandler fh = new FileHandler("text.txt");
         logger.addHandler(fh);
@@ -22,15 +20,11 @@ public class task4_HW2_S2 {
         fh.setFormatter(sFormat);
         // fh.setFormatter(xml);
 
-        logger.log(Level.INFO,"Program started");
+        logger.log(Level.INFO,"Program started");  
         
         
-        
-        
-        
-        
-        double num2 = 0;
-        Scanner input =  new Scanner(System.in);        
+        Double num2;        
+        // Scanner input =  new Scanner(System.in);        
         double num1 = getNum("Введите первое число: ");
         logger.log(Level.INFO,"The first number {0} inputed " ,num1);
         System.out.printf("Вы ввели %f\n",num1);
@@ -44,31 +38,38 @@ public class task4_HW2_S2 {
         num2 = getNum("Введите второе число: ");
         logger.log(Level.INFO,"The second number {0} inputed " ,num2);
         System.out.printf("Вы ввели %f\n",num2);
-        if (num2 !=0 && operation != "/") {            
-            break;
+        
+        if (operation.equals("/") && num2 == 0 ) {
+            System.out.printf("На ноль делить нельзя!\n");
+            logger.log(Level.INFO,"Incorrect input will result in division by zero "); 
+            continue;           
         }
-        System.out.printf("На ноль делить нельзя!\n");
-        logger.log(Level.INFO,"Incorrect input will result in division by zero ");
+        
+        break;
     }
 
     switch (operation) {
+        
         case "+":
-            System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+            System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));            
+            logger.log(Level.INFO,"Output the result of operation: {0} {1} {2} = {3}",new Object[]{num1,operation,num2,num1+num2});
             break;
         case "-":
             System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+            logger.log(Level.INFO,"Output the result of operation: {0} {1} {2} = {3}",new Object[]{num1,operation,num2,num1-num2});
             break;
         case "*":
             System.out.println(num1 + " x " + num2 + " = " + (num1 * num2));
+            logger.log(Level.INFO,"Output the result of operation: {0} {1} {2} = {3}",new Object[]{num1,operation,num2,num1*num2});
             break;
         case "/":
             System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+            logger.log(Level.INFO,"Output the result of operation: {0} {1} {2} = {3}",new Object[]{num1,operation,num2,num1/num2});
             break;
     }   
     }     
 
-    static String getOper(String prompt) {
-        
+    static String getOper(String prompt) {        
         Scanner input = new Scanner(System.in);
         System.out.print(prompt);
         String s;
@@ -78,7 +79,7 @@ public class task4_HW2_S2 {
             if (s.equals("+")||s.equals("-")||s.equals("*")||s.equals("/")){
                 return s;
             }
-            logger.log(Level.INFO,"The arithmetical sign {0} is't correct input" ,s);
+            logger.log(Level.INFO,"The arithmetic sign {0} is't correct input" ,s);
             System.out.printf("Введите знак арифметического действия: ");
             
         }            
@@ -86,8 +87,9 @@ public class task4_HW2_S2 {
     
     static double getNum(String prompt) {
         Scanner input = new Scanner(System.in);
-        System.out.print(prompt);        
+        System.out.print(prompt);              
         while (!input.hasNextInt()) {
+            logger.log(Level.INFO,"Incorrect number input");
             System.out.printf("Введите правильное число :");
             input.next();
         }

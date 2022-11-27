@@ -4,22 +4,31 @@ import java.util.Scanner;
 
 public class task3_HW_s1 {
     public static void main(String[] args) {
-        double num2 = 0;
+        double num1;
+        double num2;
         Scanner input =  new Scanner(System.in);        
-        double num1 = getNum("Введите первое число: ");
+        num1 = getNum("Введите первое число: ");
         System.out.printf("Вы ввели %f\n",num1);
          
         String operation = getOper("Введите знак действия: '+' , '-' , '*' , '/' :");
+        
         System.out.printf("Вы ввели %s\n",operation);
 
     while(true){
         num2 = getNum("Введите второе число: ");
-        System.out.printf("Вы ввели %f\n",num2);
-        if (num2 !=0 && operation != "/") {            
-            break;
+        System.out.printf("Вы ввели %f\n",num2);        
+        if (operation.equals("/") && num2 == 0 ){            
+            
+                System.out.printf("На ноль делить нельзя!\n");
+            continue;
+            
+
+        }            
+        break;
         }
-        System.out.printf("На ноль делить нельзя!\n");
-    }
+            
+        
+    
 
     switch (operation) {
         case "+":
@@ -43,7 +52,8 @@ public class task3_HW_s1 {
         String s;
            
         while (true) {
-            s = input.nextLine();            
+            s = input.nextLine(); 
+                        
             if (s.equals("+")||s.equals("-")||s.equals("*")||s.equals("/")){
                 return s;
             }
