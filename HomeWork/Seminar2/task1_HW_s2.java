@@ -5,6 +5,7 @@
 // Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
 package HomeWork.Seminar2;
 import org.json.simple.*;
+import org.json.simple.parser.JSONParser;
 
 
 public class task1_HW_s2 {
@@ -18,8 +19,10 @@ public class task1_HW_s2 {
 
         System.out.println(resultJson);
 
-        StringBuilder a = new StringBuilder();
-        String[] keys;
+        JSONParser parser = new JSONParser();
+        
+
+       
 
 
         
