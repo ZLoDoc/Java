@@ -18,11 +18,8 @@ public class task3_HW_s1 {
         num2 = getNum("Введите второе число: ");
         System.out.printf("Вы ввели %f\n",num2);        
         if (operation.equals("/") && num2 == 0 ){            
-            
                 System.out.printf("На ноль делить нельзя!\n");
             continue;
-            
-
         }            
         break;
         }
