@@ -25,7 +25,7 @@ public class task2 {
             int n = rand.nextInt(7);
             myList.add(solarSystem[n]);
         }
-            System.out.println(myList.toString());
+            System.out.println(myList);
 
         HashMap <String, Integer> answer = new HashMap() ;
 

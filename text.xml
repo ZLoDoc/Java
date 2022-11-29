@@ -1,2 +1,88 @@
-но€б. 26, 2022 2:40:04 AM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: Program started
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-28T08:19:52.542533500Z</date>
+  <millis>1669623592542</millis>
+  <nanos>533500</nanos>
+  <sequence>0</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program started</message>
+</record>
+<record>
+  <date>2022-11-28T08:19:52.625312900Z</date>
+  <millis>1669623592625</millis>
+  <nanos>312900</nanos>
+  <sequence>1</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The number 5 changed position with the number 3 </message>
+</record>
+<record>
+  <date>2022-11-28T08:19:52.637281300Z</date>
+  <millis>1669623592637</millis>
+  <nanos>281300</nanos>
+  <sequence>2</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The number 5 changed position with the number 1 </message>
+</record>
+<record>
+  <date>2022-11-28T08:19:52.639275400Z</date>
+  <millis>1669623592639</millis>
+  <nanos>275400</nanos>
+  <sequence>3</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The number 5 changed position with the number 4 </message>
+</record>
+<record>
+  <date>2022-11-28T08:19:52.644263200Z</date>
+  <millis>1669623592644</millis>
+  <nanos>263200</nanos>
+  <sequence>4</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The number 3 changed position with the number 1 </message>
+</record>
+<record>
+  <date>2022-11-28T08:19:52.647254300Z</date>
+  <millis>1669623592647</millis>
+  <nanos>254300</nanos>
+  <sequence>5</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The number 2 changed position with the number 1 </message>
+</record>
+<record>
+  <date>2022-11-28T08:19:52.653237100Z</date>
+  <millis>1669623592653</millis>
+  <nanos>237100</nanos>
+  <sequence>6</sequence>
+  <logger>HomeWork.Seminar2.task2_HW_sem2</logger>
+  <level>INFO</level>
+  <class>HomeWork.Seminar2.task2_HW_sem2</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The program is completed</message>
+</record>
+</log>

@@ -6,11 +6,7 @@ package HomeWork.Seminar2;
 import java.io.IOException;
 import java.util.logging.*;
 
-public class task2_HW_sem2 {
-        
-        
-       
-        
+public class task2_HW_sem2 {        
         public static void main(String[] args) throws SecurityException, IOException  {
                 Logger logger = Logger.getLogger(task2_HW_sem2.class.getName());
                 
@@ -41,8 +37,7 @@ public class task2_HW_sem2 {
                         }
                 }
                 for(int item : arr){                        
-                        System.out.printf("%d ",item);
-                        
+                        System.out.printf("%d ",item);                        
                 }
                 logger.info("The program is completed");
 

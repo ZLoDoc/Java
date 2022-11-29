@@ -5,8 +5,6 @@
 // Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
 package HomeWork.Seminar2;
 import org.json.simple.*;
-import org.json.simple.parser.JSONParser;
-
 
 public class task1_HW_s2 {
     public static void main(String[] args) {
@@ -17,15 +15,15 @@ public class task1_HW_s2 {
         resultJson.put("city", "Moscow");                        
         resultJson.put("age", "null");
 
-        System.out.println(resultJson);
-
-        JSONParser parser = new JSONParser();
-        
-
-       
-
-
-        
+        System.out.println(resultJson);      
+        StringBuilder sqlstring = new StringBuilder("select * from students where: ");
+        for (Object key: resultJson.keySet())
+        {
+            if(!resultJson.get(key).equals("null")){
+                sqlstring.append(key).append(" = ").append(resultJson.get(key)).append(" AND ");
+        }
     }
     
+    System.out.println(sqlstring.substring(0,sqlstring.length()-5));
+}
 }
