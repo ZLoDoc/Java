@@ -1,12 +1,14 @@
-нояб. 27, 2022 11:10:38 PM HomeWork.Seminar2.task4_HW2_S2 main
+РЅРѕСЏР±. 29, 2022 5:07:51 PM HomeWork.Seminar2.task4_HW2_S2 main
 INFO: Program started
-нояб. 27, 2022 11:10:42 PM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The first number 254 inputed 
-нояб. 27, 2022 11:10:46 PM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The arifmetical sign * inputed 
-нояб. 27, 2022 11:10:48 PM HomeWork.Seminar2.task4_HW2_S2 getNum
-INFO: Incorrect number input
-нояб. 27, 2022 11:10:59 PM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: The second number 5 inputed 
-нояб. 27, 2022 11:10:59 PM HomeWork.Seminar2.task4_HW2_S2 main
-INFO: Output the result of operation: 254 * 5 = 1 270
+РЅРѕСЏР±. 29, 2022 5:07:57 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The first number 5 inputed 
+РЅРѕСЏР±. 29, 2022 5:08:00 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The arifmetical sign / inputed 
+РЅРѕСЏР±. 29, 2022 5:08:01 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The second number 0 inputed 
+РЅРѕСЏР±. 29, 2022 5:08:01 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: Incorrect input will result in division by zero 
+РЅРѕСЏР±. 29, 2022 5:08:04 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: The second number 45 inputed 
+РЅРѕСЏР±. 29, 2022 5:08:04 PM HomeWork.Seminar2.task4_HW2_S2 main
+INFO: Output the result of operation: 5 / 45 = 0,111
