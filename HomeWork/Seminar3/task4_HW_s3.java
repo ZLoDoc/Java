@@ -28,7 +28,7 @@ public class task4_HW_s3 {
             }
 
             Scanner input =  new Scanner(System.in);
-            System.out.println("Select a section or enter a new one:" );
+            System.out.print("Select a section or enter a new one : " );
             String chapter = input.nextLine().toLowerCase();    
             int currentSection=0;       
             for(int i = 0;i<shelf.size();i++){
@@ -42,10 +42,13 @@ public class task4_HW_s3 {
                     break;
                 }
             }            
-            System.out.println("Enter the name of the book : ");
+            System.out.print("Enter the name of the book : ");
             String bookName = input.nextLine().toLowerCase();
+            
             if(!shelf.get(currentSection).contains(bookName)){                 
                 shelf.get(currentSection).add(bookName);
+                for(int i =1;i<shelf.get(currentSection).size();i++)
+                System.out.printf("Others book in this collection : %s\n",shelf.get(currentSection).get(i));
             }
             else{
                 System.out.printf("This book is present in the collection : %s\n",shelf.get(currentSection).get(0));                
