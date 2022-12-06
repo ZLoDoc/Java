@@ -7,8 +7,6 @@
 package HomeWork.Seminar4;
 
 import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class task2_HW4_sem4 {
     public static void main(String[] args) {
@@ -21,15 +19,47 @@ public class task2_HW4_sem4 {
         
         addList.add(str1);
         addList.add(str2);        
-        addList.add(str3);
+        // addList.add(str3);
         addList.add(str4);
-       
-        
-        
-        // PriorityQueue<String> pq = new PriorityQueue<String>();
-        
+        System.out.println("=================================");
+        System.out.println("Изначально в списке нет третьего значения");
+        prnList(addList);
+        System.out.println("=================================");
+        System.out.println("Добавляем третье значение в конец списка");
+        enqueue(addList, str3);
+        prnList(addList);
+        System.out.println("=================================");
+        System.out.println("Возвращаем первое значение и удаляем его из списка"); 
+        System.out.println(dequeue(addList));
+        System.out.println("И оно удалено из списка");
+        prnList(addList); 
+        System.out.println("=================================");
+        System.out.println("Возвращаем первое значение и не удаляем из списка"); 
+        System.out.println(first(addList));      
+        prnList(addList); 
         
     }
     
     
+    public static void prnList (LinkedList strList){
+        System.out.println("=================================");
+        for (int i=0;i<strList.size();i++){
+            System.out.println(strList.get(i));
+        }
+    }
+
+    public static LinkedList <String> enqueue(LinkedList<String> str, String addVal){                    
+        str.add(addVal);
+        return str;       
+    }
+      
+    public static  String dequeue(LinkedList str) {
+        String firstElem =  (String)str.get(0);        
+        str.remove(0);        
+        return firstElem;
+    }     
+    public static String first(LinkedList str) {
+        String firstElem =  (String)str.get(0);
+        return firstElem;        
+    }     
 }

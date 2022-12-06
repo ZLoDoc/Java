@@ -5,7 +5,6 @@ package HomeWork.Seminar4;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 public class task1_HW4_sem4 {
     public static void main(String[] args) {
@@ -24,31 +23,20 @@ public class task1_HW4_sem4 {
             System.out.println(addList.get(i));
         }
 
-        System.out.println("=================================");
-
-        reverseList(addList);        
-    }
-        public static void reverseList(LinkedList str){
-            // //The first variant
-            // System.out.println("The first variant using For\n");
-            // for (int i=str.size();i>=1;i--){
-            //     System.out.println(str.get(i-1));
-            // }
-            // System.out.println("=================================");
-            // System.out.println("The second variant using Iterator\n");
-            // //The second variant
-            // Iterator<String> iterator = str.descendingIterator();        
-            // while(iterator.hasNext()){
-            //  System.out.println(iterator.next());
-            // }
-            System.out.println("=================================");
-            System.out.println("The third variant using ListIterator\n");
-            ListIterator<String> listIterator = str.listIterator(str.size());
-            while (listIterator.hasPrevious())
-            {
-                System.out.println(listIterator.previous());
+        System.out.println("=================================");        
+        Iterator<String> iterator = reverseList(addList).listIterator();        
+        while(iterator.hasNext()){
+             System.out.println(iterator.next());
             }
-        }        
-        
+        System.out.println("=================================");         
+    }
+        public static LinkedList <String>  reverseList(LinkedList<String> str){        
+            LinkedList<String> reversList = new LinkedList<>();            
+            for (int i=str.size();i>=1;i--){
+                reversList.add(str.get(i-1));
+            }
+            return reversList;       
+           
+        }               
         
 }
