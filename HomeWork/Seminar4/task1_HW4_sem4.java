@@ -18,6 +18,7 @@ public class task1_HW4_sem4 {
         addList.add(str3);
         addList.add(str4);
         addList.add(1,str2);
+       
         System.out.println("=================================");
         for (int i=0;i<addList.size();i++){
             System.out.println(addList.get(i));

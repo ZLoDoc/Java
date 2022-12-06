@@ -40,7 +40,7 @@ public class task3_HW4_sem4 {
     while(true){
         System.out.printf("Будет вычисленно выражение: %d %s %d ",(int)num1,operation,(int)num2);
         System.out.println();
-        System.out.print("Для изменения ввода выберите '1, 2, 3' или '0' для вычисления  :");
+        System.out.print("Выберите 1, 2 или 3 для изменения ввода или '0' - продолжить   :");
         // System.out.println(db);
         for (HashMap.Entry entry: db.entrySet()) {
 
