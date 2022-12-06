@@ -1,6 +1,7 @@
 // Задача 3. В калькулятор добавьте возможность отменить последнюю операцию.
 package HomeWork.Seminar4;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -10,35 +11,59 @@ public class task3_HW4_sem4 {
        
         double num1;
         double num2;
+        int correct;
         Scanner input =  new Scanner(System.in);
         Map<Integer, String> db = new HashMap<>();
         
         num1 = getNum("Введите первое число: ");
-        String value =Double.toString(num1) ;
+        String value =Integer.toString((int)num1) ;
         db.put(1,value);
-        System.out.printf("Вы ввели %f\n",num1);
+        System.out.printf("Вы ввели %d\n",(int)num1);
                  
-        String operation = getOper("Введите знак действия: '+' , '-' , '*' , '/' :");
-        value = getOper(operation);
+        String operation = getOper("Введите знак действия: '+' , '-' , '*' , '/' : ");
+        value = operation;
         db.put(2,value);
         
         System.out.printf("Вы ввели %s\n",operation);
 
     while(true){
         num2 = getNum("Введите второе число: ");
-        System.out.printf("Вы ввели %f\n",num2);        
+        System.out.printf("Вы ввели %d\n",(int)num2);        
         if (operation.equals("/") && num2 == 0 ){            
                 System.out.printf("На ноль делить нельзя!\n");
             continue;
         }
-        value = Double.toString(num2);
+        value = Integer.toString((int)num2);
         db.put(3,value);            
         break;
         }
-        System.out.println(db); 
-            
+    while(true){
+        System.out.printf("Будет вычисленно выражение: %d %s %d ",(int)num1,operation,(int)num2);
+        System.out.println();
+        System.out.print("Для изменения ввода выберите '1, 2, 3' или '0' для вычисления  :");
+        // System.out.println(db);
+        for (HashMap.Entry entry: db.entrySet()) {
+
+            System.out.printf("%s ",entry);
+         
+         }        correct = input.nextInt(); 
+
+        if (correct == 1){
+            System.out.print("Введите новое значение для первого числа :");
+            num1 = input.nextInt();
+        } 
+        if (correct == 2){
+            System.out.print("Введите новый операнд :");
+            operation = input.next();
+
+        } 
+        if (correct == 3){
+            System.out.print("Введите новое значение для второго числа :");
+            num2 = input.nextInt();
+        } 
+        if (correct == 0) break;
         
-    
+    }   
 
     switch (operation) {
         case "+":
