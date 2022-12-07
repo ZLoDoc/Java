@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class task1_sem5 {
     public static void main(String[] args) {
-        Map<Integer, String> db = new HashMap<>();
+        Map<String, String> db = new HashMap<>();
         // ArrayList<Integer> list = new ArrayList<>();
         LinkedList<String> addList = new LinkedList<>();
         db.put(1, );
