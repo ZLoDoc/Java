@@ -9,11 +9,14 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class task2_HW5 {
     public static void main(String[] args) {
 
-    Map <Integer,String> employers = new HashMap<>();      
+    Map <Integer,String> employers = new HashMap<>();
+    Map <String,Integer> frequensy= new HashMap<>();        
     String temp;
     int count=0;
     String list = "Иван Иванов,Светлана Петрова,Кристина Белова,Анна Мусина,Анна Крутова,Иван Юрин,Петр Лыков,Павел Чернов,Петр Чернышов,Мария Федорова,Марина Светлова,Мария Савина,Мария Рыкова,Марина Лугова,Анна Владимирова,Иван Мечников,Петр Петин,Иван Ежов";
@@ -28,16 +31,19 @@ public class task2_HW5 {
 
     for (Map.Entry keyz: employers.entrySet()) {
         temp = keyz.getValue().toString();
-        temp = (temp.split(" "))[0];        
-        keyz.
-        // for (int i = 0; i< employers.size();i++){
-            
-
-        // // System.out.println("\n номер :" + key.getKey() + " \n сотрудник : " + key.getValue());
-        // System.out.println( temp.split(" ").toString());
-        // }
-        
+        temp = (temp.split(" "))[0];
+        System.out.println(temp);
+        for (Map.Entry key: employers.entrySet()) {
+        if(temp.equals((key.getValue().toString()).split(" ")[0])){
+            count++;
+        }
+        frequensy.put(temp, count);
+        }
+        count=0;        
     }
-}
+    System.out.println(frequensy);
+    SortedSet<String> values = new TreeSet<String>(frequensy.values());
+    Сортировку Hashmap
 
+}
 }
