@@ -1,19 +1,30 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
-
-public class temp3 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+ 
+class Main
 {
     public static void main(String[] args)
     {
-        Deque<String> deque = new LinkedList<>();
-
-        deque.add("Apple"); // Добавляет элемент Apple в конец очереди
-        deque.addFirst("Orange"); // Добавляет элемент Orange в начало очереди
-        deque.addLast("Pineapple"); // Добавляет элемент Pineapple в конец очереди
-        System.out.println(deque.getFirst());  
-        deque.remove();
-
-        System.out.println(deque);
+        Map<String, String> country = new HashMap<>();
+ 
+        country.put("India", "New Delhi");
+        country.put("USA", "Washington D.C.");
+        country.put("Japan", "Tokyo");
+        country.put("China", "Beijing");
+ 
+        // Сортировка карты по значениям с использованием Java 8 Stream
+        country = country.entrySet()
+                    .stream()
+                    .sorted(Map.Entry.comparingByValue())
+                    .collect(Collectors.toMap(
+                                        Map.Entry::getKey,
+                                        Map.Entry::getValue,
+                                        (oldValue, newValue) -> oldValue,
+                                        LinkedHashMap::new
+                    ));
+ 
+        System.out.println("Sorted map by values: " + country);
     }
 }
