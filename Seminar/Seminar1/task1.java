@@ -1,5 +1,7 @@
 // Задание2
 // Дан массив двоичных чисел [1,1,0,1,1,1],вывести максимальное количество подряд идущих 1.
+package Seminar.Seminar1;
+
 public class task1 
 {
     public static void main(String[] args)

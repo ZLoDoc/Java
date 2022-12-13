@@ -27,7 +27,7 @@ public class working_files {
         bufferedWriter.flush();
         bufferedWriter.close();
 
-        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        BufferedReader bufferedReader = new BufferedReader(file);
         while (bufferedReader.ready()){
             System.out.println(bufferedReader.readLine());
         }

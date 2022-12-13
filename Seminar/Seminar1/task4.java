@@ -1,5 +1,6 @@
 // Задача 4
 // Найти самую длинную строку начинающуюся с "abc"
+package Seminar.Seminar1;
 public class task4
 {
     public static void main(String[] args) 

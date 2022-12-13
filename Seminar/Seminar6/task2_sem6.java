@@ -13,9 +13,9 @@ import java.util.regex.Pattern;
 
 public class task2_sem6 {
     public static void main(String[] args) {
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM--dd 'at' HH:mm:ss z");
-        Date date = new Date(System.currentTimeMillis() - 3600000);
-        System.out.println(formatter.format(date));
+        // SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM--dd 'at' HH:mm:ss z");
+        // Date date = new Date(System.currentTimeMillis() - 3600000);
+        // System.out.println(formatter.format(date));
         
         katz firstCat = new katz(1, "Барсик");
         
