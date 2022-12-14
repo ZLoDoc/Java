@@ -1,4 +1,5 @@
 package HomeWork.Seminar6;
+import java.util.HashMap;
 import java.util.Random;
 
 
@@ -12,14 +13,15 @@ public class note {
     Integer memory;// количество ОЗУ
     Integer hddSize; // размер жесткого диска
     String osType;// тип операционной системы
-    String[]names=new String[]{"Accer","Asus","HP","Samsung","Dell"};
+    public String[]names=new String[]{"Accer","Asus","HP","Samsung","Dell"};
     Integer[]sizeScrs=new Integer[]{14,15,16,17,19,21};    
     String[]colors=new String[]{"White","Black","Silver"};
     String[]cpus=new String[]{"Intel","AMD"};
     Integer[]memories=new Integer[]{8,16,32,64,128,256};
     Integer[]hdds=new Integer[]{512,1,2,4};
     String[]osVariant=new String[]{"Windows","macOs","Linux","None"};
-
+      
+    
     public note(int modId){
         Random rnd = new Random();
         // for (int i=0;i<names.length;i++){
@@ -47,5 +49,8 @@ public class note {
             System.out.println("======================================"); 
         
         }
+
+
+      
        
 }
