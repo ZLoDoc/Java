@@ -1,5 +1,6 @@
 package HomeWork.Seminar6;
 
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,14 +18,19 @@ public class main {
             
            
         }
+        // System.out.println(notes.get(1));
+        // Object temp = (notes.get(1));
+        
+        
         for (Map.Entry key: notes.entrySet()) {
-            System.out.println(key.getValue());
-            
+            // System.out.println(key.getValue());
+            // key.getValue().equals(null);
+                // System.out.println(key.getValue().getClass());
+                Class[] interfaces = key.getValue().getClass().getInterfaces();                            
+
         }   
            
             
         
     }
 }
-// katz firstCat = new katz(1, "Барсик");
-// firstCat.info();
