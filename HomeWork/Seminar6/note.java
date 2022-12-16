@@ -6,19 +6,19 @@ import java.util.Random;
 
 public class note {
     int modelId; // ID модели
-    String name; // название производителя
+    public String name; // название производителя
     Integer sizeScr; //диагональ экрана
     String color;//цвет
     String cpu;//модель процессора
     Integer memory;// количество ОЗУ
     Integer hddSize; // размер жесткого диска
     String osType;// тип операционной системы
-    public String[]names=new String[]{"Accer","Asus","HP","Samsung","Dell"};
+    public static String[]names=new String[]{"Accer","Asus","HP","Samsung","Dell"};
     Integer[]sizeScrs=new Integer[]{14,15,16,17,19,21};    
-    String[]colors=new String[]{"White","Black","Silver"};
-    String[]cpus=new String[]{"Intel","AMD"};
+    public static String[]colors=new String[]{"White","Black","Silver"};
+    public static String[]cpus=new String[]{"Intel","AMD"};
     Integer[]memories=new Integer[]{8,16,32,64,128,256};
-    Integer[]hdds=new Integer[]{512,1,2,4};
+    public static Integer[]hdds=new Integer[]{512,1,2,4};
     String[]osVariant=new String[]{"Windows","macOs","Linux","None"};
       
     
