@@ -1,3 +1,13 @@
+// Подумать над структурой класса Ноутбук для магазина техники - выделить поля и методы. Реализовать в java.
+// Создать множество ноутбуков.
+// Написать метод, который будет запрашивать у пользователя критерий (или критерии) фильтрации и выведет ноутбуки, отвечающие фильтру. Критерии фильтрации можно хранить в Map. Например:
+// “Введите цифру, соответствующую необходимому критерию:
+// 1 - ОЗУ
+// 2 - Объем ЖД
+// 3 - Операционная система
+// 4 - Цвет …
+// Далее нужно запросить минимальные значения для указанных критериев - сохранить параметры фильтрации можно также в Map.
+// Отфильтровать ноутбуки их первоначального множества и вывести проходящие по условиям.
 package HomeWork.Seminar6;
 
 import java.util.Arrays;
@@ -13,11 +23,10 @@ public class main {
         HashSet<note> notes = new HashSet<>();
 
         for (int i = 1; i<=10;i++ ){
-            note first = new note(i);
-            // first.info();
+            note first = new note(i);            
             notes.add(first);                       
         }
-        // System.out.println(notes.size());
+        
 
         main_menu(notes);
                 
@@ -54,8 +63,7 @@ public class main {
     
 
     public static void main_menu(HashSet<note> notes) {
-       while(true){
-            // Scanner input = new Scanner(System.in);
+       while(true){            
             System.out.println("\n1 - Вывести список ноутбуков\n2 - Отфильтровать по критерию\n3 - Выход");
             System.out.print("Выберите : ");
             String choise = input.nextLine();
@@ -82,7 +90,7 @@ public class main {
         HashSet<note> filter = new HashSet<>();
         boolean flag = false;
         while (!flag) {            
-            System.out.println("\n1. Отсортировать по производителю\n2. Отсортировать по цвету\n3. Отсортировать по размеру HDD\n4. Выход");
+            System.out.println("\n1. Отсортировать по производителю\n2. Отсортировать по цвету\n3. Отсортировать по размеру HDD\n4. Распечатать отсортированный каталог ноутов\n6. Выход");
             System.out.print("Выберите : ");
            
             String choise = input.nextLine();
@@ -91,7 +99,8 @@ public class main {
                     case "1" -> brend_sorted(notes, filter);
                     case "2" -> color_sorted(notes, filter);
                     case "3" -> hdd_sorted(notes, filter);
-                    case "4" -> {
+                    case "4" -> prn_res(notes, filter);
+                    case "5" -> {
                         return;                        
                     }
                     
@@ -103,7 +112,6 @@ public class main {
     }
     
     public static void brend_sorted(HashSet<note>notes,HashSet<note>filter){
-        // System.out.println(Arrays.toString(note.names) );
         System.out.println("-----------------------------------");          
         for(int i =0; i<note.names.length;i++){
             System.out.println(note.names[i]);
@@ -114,41 +122,64 @@ public class main {
         System.out.println("Для сортировки по бренду введите назввание фирмы");
         String choise = input.nextLine();
         for (note item : notes) {
-            // item.info();
         
             if (item.name.equals(choise)){
-                System.out.println(" Ура !!!!! ");
-                System.out.println(input);
+                filter.add(item);
+                
+                // item.info();
             }
         }
 
 
     }
     public static void color_sorted(HashSet<note>notes,HashSet<note>filter){
-        System.out.println("-----------------------------------");          
+        System.out.println("-----------------------------------");              
         for(int i =0; i<note.colors.length;i++){
             System.out.println(note.colors[i]);
         }
+
+        System.out.println("-----------------------------------"); 
+        System.out.println("Для сортировки по цвету введите цвет");
+        String choise = input.nextLine();
+        for (note item : notes) {
+            
+            if (item.color.equals(choise)){ 
+                filter.add(item);
+               
+                // item.info();
+            }
+        }
+       
         System.out.println("-----------------------------------");
     }
 
 
     public static void hdd_sorted(HashSet<note>notes,HashSet<note>filter){
-        System.out.println("-----------------------------------");          
+        System.out.println("-----------------------------------");                          
         for(int i =0; i<note.hdds.length;i++){
             System.out.println(note.hdds[i]);
         }
+        System.out.println("-----------------------------------"); 
+        System.out.println("Для сортировки по HDD введите объем диска");
+        String choise = input.nextLine();
+        for (note item : notes) {
+            
+            if (item.hddSize.equals(choise)){                
+                filter.add(item);
+
+                // item.info();
+            }
+        }        
         System.out.println("-----------------------------------");
     }
+    public static void prn_res(HashSet<note>notes,HashSet<note>filter){
+        for (note item : notes) {
+            
+            if (notes.contains(filter)){                
+                System.out.println("LKlllllllllllllllllllllllllllllllllllllllllllllll");;
 
-
-
-
-
-
+                // item.info();
+            }
+        }      
+    }
 }
-       
-
-
- 
-
