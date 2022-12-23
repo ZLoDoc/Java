@@ -31,7 +31,7 @@ public class Notebook {
 
 
     protected void info(){
-        System.out.println("ID :"+id+", name : "+name+", memory :"+memory);
+        System.out.println("ID :"+id+", name : "+name+", memory :"+memory+", color : "+color+", HDD size : "+hdd);
                
     }
 

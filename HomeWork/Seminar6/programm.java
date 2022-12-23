@@ -93,15 +93,22 @@ public class programm {
 
                     for(Notebook value : AllNote){                        
                         boolean NameBool = false;
-                        boolean MemBool = false;                 
+                        boolean MemBool = false;
+                        boolean ColorBool = false;
+                        boolean HddBool = false;                  
                         
                         if ((filter.Name == null) || value.name.equals(filter.Name)){                            
                             NameBool = true;                            
                         }
                         if (filter.MinSize == 0 || value.memory>=filter.MinSize && value.memory<=filter.MaxSize){                            
-                            MemBool = true;                            
+                            MemBool = true;
+                        if (filter.Color.equals(null)||value.color.equals(filter.Color)) 
+                            ColorBool = true;                                                       
                         }                        
-                        if(NameBool==true & MemBool== true){
+                        if(filter.MinHdd==0 || value.hdd>=filter.MinHdd||value.hdd<=filter.MaxHdd){
+                            HddBool = true;
+                        }
+                        if(NameBool==true & MemBool== true & ColorBool == true & HddBool == true){
                             FiltredNote.add(value);                                 
                         }       
                     }

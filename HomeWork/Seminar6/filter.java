@@ -47,7 +47,7 @@ public class filter {
     }
    
     protected void info(){
-        System.out.println("(Модель ноутбука : "+getName()+", min size : "+getMinSize()+", max size : "+getMaxSize()+")");
+        System.out.println("(Модель ноутбука : "+getName()+", min size : "+getMinSize()+", max size : "+getMaxSize()+", color : "+color+", HDD size : "+hdd")");
                
     }
    
