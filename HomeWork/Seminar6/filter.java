@@ -4,6 +4,10 @@ public class filter {
     public String Name;
     public int MinSize;
     public int MaxSize;
+    public String Color;
+    public int MinHdd;
+    public int MaxHdd;
+
     
     public String getName() {
         return Name;
@@ -22,12 +26,31 @@ public class filter {
     }
     public void setMaxSize(int maxSize) {
         MaxSize = maxSize;
+    }    
+    public String getColor() {
+        return Color;
     }
+    public void setColor(String color) {
+        Color = color;
+    }
+    public int getMinHdd() {
+        return MinHdd;
+    }
+    public void setMinHdd(int minHdd) {
+        MinHdd = minHdd;
+    }
+    public int getMaxHdd() {
+        return MaxHdd;
+    }
+    public void setMaxHdd(int maxHdd) {
+        MaxHdd = maxHdd;
+    }
+   
     protected void info(){
         System.out.println("(Модель ноутбука : "+getName()+", min size : "+getMinSize()+", max size : "+getMaxSize()+")");
                
     }
-    
+   
     
 
 }
