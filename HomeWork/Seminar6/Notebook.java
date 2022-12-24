@@ -2,18 +2,18 @@ package HomeWork.Seminar6;
 
 public class Notebook {
     
-    protected int id;
+    protected Integer id;
     protected String name;
-    protected int memory;
+    protected Integer memory;
     protected String color;
-    protected int hdd;
+    protected Integer hdd;
     
     
     public Notebook() {
     }
 
 
-    public Notebook(int id, String name,int memory) {
+    public Notebook(Integer id, String name,Integer memory) {
         this.id = id;
         this.name = name;
         this.memory = memory;
@@ -21,7 +21,7 @@ public class Notebook {
     }
     
 
-    public Notebook(int id, String name, int memory, String color, int hdd) {
+    public Notebook(Integer id, String name, Integer memory, String color, Integer hdd) {
         this.id = id;
         this.name = name;
         this.memory = memory;
