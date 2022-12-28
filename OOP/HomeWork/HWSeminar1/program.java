@@ -4,9 +4,7 @@
 // +реализовать поиск по части имени фильма
 package OOP.HomeWork.HWSeminar1;
 
-import java.util.HashSet;
 import java.util.Scanner;
-
 public class program {public static void main(String[] args) {
     Scanner input =  new Scanner(System.in);    
     baseMovie base = new baseMovie();
@@ -18,11 +16,11 @@ public class program {public static void main(String[] args) {
         System.out.println("2 - Веести имя фильма для получения информации");
         System.out.println("3 - Добавить фильм");   
         System.out.println("-------------------------");
-        System.out.print("Ваш выбор: ");
+        System.out.print("Ваш выбор: ");        
         
         String key = input.nextLine(); 
         System.out.println("-------------------------");
-
+        
         switch(key){
             case ("1"):
                 for( movie index: base.allMovie){                    
@@ -39,14 +37,24 @@ public class program {public static void main(String[] args) {
                     }
                 }
                 continue;
-                case ("3"):
-                
+                case ("3"):                
                 movie newFilm = new movie();               
-                base.addMovie(newFilm.createMovie());
+                base.addMovie(createMovie());
                 newFilm.movieInfo();
                 continue;    
-
         }
     }
-}   
+} 
+
+    protected static movie createMovie(){
+                    Scanner input =  new Scanner(System.in);   
+                    movie newFilm = new movie();
+                    System.out.print("Введите название фильма: ");
+                    newFilm.name = input.nextLine(); 
+                    System.out.print("Введите жанр: ");
+                    newFilm.genre = input.nextLine();
+                return newFilm;    
+                    
+       }  
+
 }
