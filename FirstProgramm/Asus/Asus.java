@@ -1,12 +1,14 @@
-package FirstProgramm;
+package FirstProgramm.Asus;
+
+import FirstProgramm.Objects.Note;
 
 public class Asus extends Note {
 
-    public Asus() {
+    protected Asus() {
     }
    
     
-    public Asus(String name, int ram, int hdd, double weight, String serialNumber) {
+    protected Asus(String name, int ram, int hdd, double weight, String serialNumber) {
         super(name, ram, hdd, weight, serialNumber);
     }
 
@@ -22,7 +24,7 @@ public class Asus extends Note {
     @Override
     public void dvdRom() {
         // TODO Auto-generated method stub
-        super.dvdRom();
-        System.out.println("DVD читает");
+        // super.dvdRom();
+        System.out.println("DVD толькео читаю ");
     }
 }

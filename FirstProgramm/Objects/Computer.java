@@ -1,6 +1,6 @@
-package FirstProgramm;
+package FirstProgramm.Objects;
 
-public class Computer{
+public class Computer extends Object{
     
     private String name;
     private int ram;
@@ -117,6 +117,8 @@ public void dvdRom(){
     System.out.println("DVD прочел");
     System.out.println("DVD записал");
 }
+
+
 
 
 

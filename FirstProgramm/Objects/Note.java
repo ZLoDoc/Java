@@ -1,8 +1,8 @@
-package FirstProgramm;
+package FirstProgramm.Objects;
 
 public class Note extends Computer{
 
-    public Note() {
+    protected Note() {
         System.out.println("Note : конструктор");
     }
 
@@ -13,14 +13,14 @@ public class Note extends Computer{
 
     @Override
     public void on(){ 
-        super.on();       
+        // super.on();       
         print("Notebook : я включился. Моя модель : " + getName()+". А мой вес : " +getWeight());
     }
 
     @Override
     public void off() {
         // TODO Auto-generated method stub
-        super.off();
+        // super.off();
         System.out.println("Notebook выключился");
     }
 
