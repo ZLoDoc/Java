@@ -5,7 +5,10 @@ import FirstProgramm.Asus.asusModel1;
 import FirstProgramm.Asus.asusModel2;
 import FirstProgramm.Objects.Computer;
 import FirstProgramm.Objects.Note;
+import FirstProgramm.Objects.Printer;
 import FirstProgramm.Toshiba.Toshiba;
+import _Study.printer;
+
 
 public class MyFirstProgramm {
     public static void main(String[] args) {
@@ -47,9 +50,13 @@ public class MyFirstProgramm {
      as2.dvdRom();
      tos1.dvdRom();
      tos2.dvdRom();
-     as1.printerPrn
-     
+   Printer prNt = new Printer();
+   prNt.on();
+   prNt.printerPrn("lalalal");
+   prNt.printerScan();
+   prNt.off();
 
+comp.load();
 
     //  comp.on();
         

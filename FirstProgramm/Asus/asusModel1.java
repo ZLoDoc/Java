@@ -11,6 +11,6 @@ public class asusModel1 extends Asus {
         super(name, ram, hdd, weight, serialNumber);
     }
 
-    pu
+    
     
 }

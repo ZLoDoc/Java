@@ -18,7 +18,7 @@ public class Computer extends Object{
         
     }
     public Computer(){
-        System.out.println("Computer : конструктор");
+        // System.out.println("Computer : конструктор");
     }    
   
     

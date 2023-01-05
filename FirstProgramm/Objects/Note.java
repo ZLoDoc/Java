@@ -24,5 +24,6 @@ public class Note extends Computer{
         System.out.println("Notebook выключился");
     }
 
+
         
 }
