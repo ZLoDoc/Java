@@ -1,16 +1,13 @@
-package FirstProgramm.Asus;
+package asus;
 
-public class asusModel1 extends Asus {
+public class AsusModel1 extends Asus {
 
-    public Object printerPrn;
-
-    public asusModel1() {
+    public AsusModel1(String name) {
+        super(name);
     }
 
-    public asusModel1(String name, int ram, int hdd, double weight, String serialNumber) {
-        super(name, ram, hdd, weight, serialNumber);
+    @Override
+    public void connect() {
+        System.out.println("AsusModel1 connect();");
     }
-
-    
-    
 }

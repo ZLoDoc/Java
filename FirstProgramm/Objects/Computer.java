@@ -1,133 +1,92 @@
-package FirstProgramm.Objects;
+package objects;
 
-public class Computer extends Object{
-    
-    private String name;
+public class Computer extends ElectronicDevice {
+
     private int ram;
     private int hdd;
-    private double weight;
-    private String serialNumber;
-   
+    
+    // для этой переменной нет гетеров и сетеров, потому что значение всегда задается конструктором
+    private boolean cdWritable = true;// по-умолчанию диски можно записывать
 
-    public Computer(String name, int ram, int hdd, double weight, String serialNumber) {
-        this.name = name;
+    
+    
+    public Computer() {
+    }
+
+    public Computer(String name) {
+        super(name);
+    }
+
+    public Computer(String name, double weight) {
+        super(name, weight);
+    }
+
+    public Computer(String name, boolean cdWritable) {
+        super(name);
+        this.cdWritable = cdWritable;
+    }
+
+    public Computer(String name, double weight, int ram, int hdd, boolean cdWritable) {
+        super(name, weight);
+
         this.ram = ram;
         this.hdd = hdd;
-        this.weight = weight;
-        this.serialNumber = serialNumber;
-        
-    }
-    public Computer(){
-        // System.out.println("Computer : конструктор");
-    }    
-  
-    
-    //------------------------------------------Get ---- Set ----------
+        this.cdWritable = cdWritable;
 
-    public String getName(){
-        return name;
-    }
-    public void setName(String newName){
-        if (newName != null && !newName.trim().equals("")) {
-            name = newName;
-        }else {
-            System.out.println("Name isn't be empty");
-        }
-    }
-    public Integer getRam(){
-        return ram;
-    }
-    public void setRam(Integer newRam){
-        if (newRam >0 ) {
-            ram = newRam;
-        }else{
-            System.out.println("This inputed value "+newRam+" is wrong !!!");
-        }
-    }
-    public int getHdd(){
-        return hdd;
-    }
-   
-    public void setHdd(int newHdd){
-        
-        if (newHdd > 0) hdd = newHdd;
-        else System.out.println(" Inputed value capasity "+newHdd+" is wrong !!! ");
-    }
-   
-   
-    public double getWeight(){
-        return weight;
-    }
-   
-    public void setWeight(Double newWeight){
-        if (newWeight > 0 && newWeight < 15){
-            weight = newWeight;
-        }else{
-            System.out.println("It's not a computer, it's a stone");
-        }
-    }
-
-
-    public String getserialNumber(){
-        if(serialNumber==null || serialNumber.equals("")){
-           
-            return "(ошибка)Нет серийника";
-        
-        }else{
-            
-            return serialNumber;
-        }
+        on();
     }
     
-    public void setserialNumber (String SerialNumber){
-        if(SerialNumber!=null && !SerialNumber.equals("")){
-            this.serialNumber = SerialNumber;
-            System.out.println(this.serialNumber);
-        }else{
-            System.out.println("The new serial number absent");
+    
 
+    public void writeDisc() {
+        System.out.println("Объект " + this.getName());
+        if (cdWritable) { // проверка, может ли привод записывать диски
+            System.out.println("Запись диска...");
+        } else {
+            System.out.println("Невозможно записать диск. Привод не пишущий");
         }
-        
-        
-            
-        
-        
-    }
-
-
-
-
-
-    public void on(){        
-        print("Computer switching on. Model of computer: " + getName()+". It's weiht " +getWeight());
-    }
-    public void off(){        
-        print("Computer switching off");
 
     }
-    public void load(){
-        print("Computer loading :" +getRam()+ " Гб " + getHdd()+" Гб");        
 
+    public void load() {
+        System.out.println("Computer load();");
     }
-    protected void print(String str){
+
+    @Override
+    public void on() {
+        System.out.println("Computer on();");
+    }
+
+    @Override
+    public void off() {
+        System.out.println("Computer off();");
+    }
+
+    public void reboot() {
+        print("Computer reboot();");
+    }
+
+    protected void print(String str) {
         System.out.println(str);
     }
 
-public void dvdRom(){
-    System.out.println("DVD прочел");
-    System.out.println("DVD записал");
-}
+    public void connect() {
+        System.out.println("Computer connect();");
+    }
 
+    public int getRam() {
+        return ram;
+    }
 
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
 
+    public int getHdd() {
+        return hdd;
+    }
 
-
-
-
-
-
-
-   
-
-
+    public void setHdd(int hdd) {
+        this.hdd = hdd;
+    }
 }

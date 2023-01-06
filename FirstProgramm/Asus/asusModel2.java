@@ -1,13 +1,13 @@
-package FirstProgramm.Asus;
+package asus;
 
-public class asusModel2 extends Asus {
+public class AsusModel2 extends Asus {
 
-    public asusModel2() {
+    public AsusModel2(String name) {
+        super(name);
     }
 
-    public asusModel2(String name, int ram, int hdd, double weight, String serialNumber) {
-        super(name, ram, hdd, weight, serialNumber);
+    @Override
+    public void connect() {
+        System.out.println("AsusModel2 connect();");
     }
-
-    
 }

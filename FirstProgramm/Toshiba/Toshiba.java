@@ -1,24 +1,13 @@
-package FirstProgramm.Toshiba;
+package toshiba;
 
-import FirstProgramm.Objects.Note;
+import objects.Notebook;
 
-public class Toshiba extends Note {
+public class Toshiba extends Notebook {
 
-    public Toshiba() {
+    // нельзя создать экземпляр, т.к. protected
+    // вызывающий класс MyFirstProgram должен находиться в другом пакете
+    protected Toshiba(String name) {
+        // т.к. по-умолчанию переменная canWriteDvd = true, в super не передаем true
+        super(name);
     }
-
-    public Toshiba(String name, int ram, int hdd, double weight, String serialNumber) {
-        super(name, ram, hdd, weight, serialNumber);
-    }
-
-    // @Override
-    // public void dvdRom() {
-    //     // TODO Auto-generated method stub
-    //     // super.dvdRom();
-    //     System.out.println(" я прочел DVD и могу его записать. ");
-    // }
-
-  
-    
-    
 }

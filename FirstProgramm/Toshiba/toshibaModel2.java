@@ -1,13 +1,19 @@
-package FirstProgramm.Toshiba;
+package toshiba;
 
-public class toshibaModel2 extends Toshiba {
+public class ToshibaModel2 extends Toshiba {
 
-    public toshibaModel2() {
+    public ToshibaModel2(String name) {
+        super(name);
     }
 
-    public toshibaModel2(String name, int ram, int hdd, double weight, String serialNumber) {
-        super(name, ram, hdd, weight, serialNumber);
+    @Override
+    public void connect() {
+        System.out.println("ToshibaModel2 connect();");
     }
-
     
+    // метод, который нужно выполнить перед подключением (connect())
+    // для демонстрации полиморфизма в классе Monitor в методе connectDevice
+    public void initializeBeforeConnect(){
+        System.out.println("Model "+getName()+" initializing before connect...");
+    }
 }

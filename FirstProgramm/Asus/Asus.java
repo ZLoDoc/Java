@@ -1,30 +1,12 @@
-package FirstProgramm.Asus;
+package asus;
 
-import FirstProgramm.Objects.Note;
+import objects.Notebook;
 
-public class Asus extends Note {
+public class Asus extends Notebook {
 
-    protected Asus() {
-    }
-   
-    
-    protected Asus(String name, int ram, int hdd, double weight, String serialNumber) {
-        super(name, ram, hdd, weight, serialNumber);
-    }
-
-
-
-
-    @Override
-    public void off() {
-        
-        super.off();
-        System.out.println("Asus выключился");
-    }
-    @Override
-    public void dvdRom() {
-        // TODO Auto-generated method stub
-        // super.dvdRom();
-        System.out.println("DVD толькео читаю ");
+    // нельзя создать экземпляр, т.к. protected
+    // вызывающий класс MyFirstProgram должен находиться в другом пакете
+    protected Asus(String name) {
+        super(name, false);// запрещаем записывать диски
     }
 }
