@@ -11,6 +11,9 @@ import toshiba.ToshibaModel2;
 public class StartProgram {
 
     public static void main(String[] args) {
+        Computer comp =null;
+        comp.print("test string2");
+        Computer.print("test string");
         
         // 7 урок, задание 2, полиморфизм: создание метода connect для каждой модели ноутбуков
         // вызов в классе Monitor с использованием полиморфизма
@@ -33,7 +36,7 @@ public class StartProgram {
         // monitor.connectDevice(note1);
         // monitor.connectDevice(comp1);
         
-        ToshibaModel1 mod1 = (ToshibaModel1)asus1;
+        // ToshibaModel1 mod1 = (ToshibaModel1)asus1;
 
 
 

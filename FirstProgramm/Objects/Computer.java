@@ -66,7 +66,7 @@ public class Computer extends ElectronicDevice {
         print("Computer reboot();");
     }
 
-    protected void print(String str) {
+    public static void print(String str) {
         System.out.println(str);
     }
 

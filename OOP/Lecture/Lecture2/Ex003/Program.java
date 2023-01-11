@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import Lecture.Lecture8.Ex003.alliance.*;
-import Lecture.Lecture8.Ex003.*;
+import OOP.Lecture.Lecture2.Ex003.alliance.*;
+import OOP.Lecture.Lecture2.Ex003.*;
 
 public class Program {
     public static void main(String[] args) {
