@@ -3,8 +3,8 @@ package OOP.Lecture.Lecture2.Ex006.Applications;
 import java.util.ArrayList;
 import java.util.List;
 
-import Lecture.Lecture8.Ex006.Document.TextDocument;
-import Lecture.Lecture8.Ex006.Format.TextFormat;
+import OOP.Lecture.Lecture2.Ex006.Document.TextDocument;
+import OOP.Lecture.Lecture2.Ex006.Format.TextFormat;
 
 public class Notepad {
     private List<TextDocument> documents;

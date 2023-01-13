@@ -1,7 +1,7 @@
 package OOP.Lecture.Lecture2.Ex006;
 
-import Lesson_08.Ex006.Applications.Notepad;
-import Lesson_08.Ex006.Format.*;
+import OOP.Lecture.Lecture2.Ex006.Applications.Notepad;
+import OOP.Lecture.Lecture2.Ex006.Format.*;
 
 public class Program {
     public static void main(String[] args) {

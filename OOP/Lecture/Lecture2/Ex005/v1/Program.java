@@ -3,12 +3,12 @@ package OOP.Lecture.Lecture2.Ex005.v1;
 import java.util.ArrayList;
 import java.util.List;
 
-import Lecture.Lecture8.Ex005.v1.Healers.Druid;
-import Lecture.Lecture8.Ex005.v1.Healers.Healer;
-import Lecture.Lecture8.Ex005.v1.Healers.Shaman;
-import Lecture.Lecture8.Ex005.v1.Warriors.Knight;
-import Lecture.Lecture8.Ex005.v1.Warriors.Paladin;
-import Lecture.Lecture8.Ex005.v1.Warriors.Warrior;
+import OOP.Lecture.Lecture2.Ex005.v1.Healers.Druid;
+import OOP.Lecture.Lecture2.Ex005.v1.Healers.Healer;
+import OOP.Lecture.Lecture2.Ex005.v1.Healers.Shaman;
+import OOP.Lecture.Lecture2.Ex005.v1.Warriors.Knight;
+import OOP.Lecture.Lecture2.Ex005.v1.Warriors.Paladin;
+import OOP.Lecture.Lecture2.Ex005.v1.Warriors.Warrior;
 
 public class Program {
     public static void main(String[] args) {

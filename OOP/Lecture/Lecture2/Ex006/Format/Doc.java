@@ -3,7 +3,7 @@ package OOP.Lecture.Lecture2.Ex006.Format;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import Lecture.Lecture8.Ex006.Document.TextDocument;
+import OOP.Lecture.Lecture2.Ex006.Document.TextDocument;
 
 public class Doc extends TextFormat {
     
