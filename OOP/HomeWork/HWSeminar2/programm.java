@@ -24,15 +24,15 @@
 
 package OOP.HomeWork.HWSeminar2;
 
-import OOP.HomeWork.HWSeminar2.Person.man;
-import OOP.HomeWork.HWSeminar2.Person.Print.printPerson;
+import OOP.HomeWork.HWSeminar2.Person.*;
+
 
 public class programm {
     public static void main(String[] args) {
         
         man Man = new man("Aleks", "Sergeevish", "Petroff", 25);
         
-        
+        System.out.println(Man.toString()); 
         
     }
     

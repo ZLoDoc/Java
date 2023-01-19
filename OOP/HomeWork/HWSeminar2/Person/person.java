@@ -36,7 +36,10 @@ public abstract class person {
         this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return firstName+" "+middleName+" "+lastName+" - "+age; 
+    }
     
 
     

@@ -8,6 +8,8 @@ public class man extends person {
     public man(String firstName, String middleName, String lastName, Integer age) {
         super(firstName, middleName, lastName, age);
     }
+
+    
      
     
 }
