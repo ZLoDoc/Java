@@ -11,6 +11,7 @@ public class Program {
         latte.addComponent(new Water("вода"));
         for (var ingredient : latte) {
             System.err.println(ingredient);
+            
         }
     }
 }

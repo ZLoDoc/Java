@@ -1,4 +1,4 @@
-package Lesson_09.Ex005;
+package OOP.Lecture.Lecture3.Ex005;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -24,17 +24,17 @@ public class Program {
         // #endregion
 
         // #region Comparable<Worker>
-        // List<Worker> db = new ArrayList<>();
-        // for (int i = 0; i < 5; i++) {
-        // db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18,31),
-        // r.nextInt(10000)));
-        // }
-        // System.out.println(db);
+        List<Worker> db = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+        db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18,31),
+        r.nextInt(10000)));
+        }
+        System.out.println(db);
 
-        // Collections.sort(db);
-        //// Array.sort(...)
+        Collections.sort(db);
+        // Array.sort(...)
 
-        // System.out.println(db);
+        System.out.println(db);
 
         // #endregion
 
