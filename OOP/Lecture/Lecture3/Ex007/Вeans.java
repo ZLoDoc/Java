@@ -1,4 +1,4 @@
-package Lesson_09.Ex007;
+package OOP.Lecture.Lecture3.Ex007;
 
 public class Вeans extends Ingredient {
 
