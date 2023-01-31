@@ -30,11 +30,12 @@ public class Program {
         r.nextInt(10000)));
         }
         System.out.println(db);
-
-        Collections.sort(db);
+        // db.sort(new AgeComporator());
+        
+        // Collections.sort(db);
         // Array.sort(...)
 
-        System.out.println(db);
+        // System.out.println(db);
 
         // #endregion
 
@@ -52,12 +53,13 @@ public class Program {
 
         // #endregion
 
-        //#region
+        //#region - лямбда
 
-        Worker w1 = new Worker("Имя", "Фамилия", 20, 20);
-        Worker w2 = new Worker("Имя", "Фамилия", 20, 20);
-        
+        // db.sort((w1, w2)->Integer.compare(w1.age, w2.age));
 
+        // Worker w1 = new Worker("Имя", "Фамилия", 20, 20);
+        // Worker w2 = new Worker("Имя", "Фамилия", 20, 20);
+        // System.out.println(db);
         //#endregion
 
     }

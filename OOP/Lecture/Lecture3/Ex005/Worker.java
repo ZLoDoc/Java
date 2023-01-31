@@ -27,9 +27,10 @@ public class Worker implements Comparable<Worker> {
 
     @Override
     public int compareTo(Worker o) {
-        if (this.age > o.age)
+    //    return Integer.compare(this.salary, o.salary);
+        if (this.salary > o.salary)
             return 1;
-        else if (this.age < o.age)
+        else if (this.salary < o.salary)
             return -1;
         else
             return 0;

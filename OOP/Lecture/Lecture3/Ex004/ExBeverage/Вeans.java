@@ -1,8 +1,8 @@
 package OOP.Lecture.Lecture3.Ex004.ExBeverage;
 
-public class Вeans extends Ingredient {
+public class Beans extends Ingredient {
 
-    public Вeans(String brand) {
+    public Beans(String brand) {
         super(brand);
     }    
 }

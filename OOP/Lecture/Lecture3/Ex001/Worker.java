@@ -6,10 +6,7 @@ public class Worker {
     public int age;
     public int salary;
 
-    public Worker(String firstName,
-            String lastName,
-            int age,
-            int salary) {
+    public Worker(String firstName,String lastName,int age,int salary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
