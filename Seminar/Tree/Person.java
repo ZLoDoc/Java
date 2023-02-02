@@ -21,11 +21,8 @@ public class Person {
         this.parent2Id = parent2Id;
     }
 
-    @Override
-    public String toString() {
-        return "Исследуемый объект: " + firstName +" "+ lastname + "\nПапа -"
-                + parent1Id + "\nМама-" + parent2Id + "]";
-    }
+    
+    
     
     
  
