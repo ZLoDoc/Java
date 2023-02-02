@@ -1,34 +1,36 @@
 package OOP.HomeWork.HWSeminar2;
 
-public  class Person {
-    Integer id;
-    String firstName;    
-    String lastName;
-    Integer age;
+public class Person {
+    Integer pesonID;
+    String firstName;
+    String lastname;
+    String sex;
+    // Integer birthDay;
+    Integer parent1Id;
+    Integer parent2Id;
+   
     
+    public Person() {
+    }
 
 
-
-    public Person(Integer id, String firstName, String lastName, Integer age) {
-        this.id = id;
+    public Person(Integer pesonID, String firstName, String lastname, String sex, Integer parent1Id,
+            Integer parent2Id) {
+        this.pesonID = pesonID;
         this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-    }
-
-
-
-
-    @Override
-    public String toString() {
-        return "Person"+ id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age;
-    }
-
-
-
-
-    
-
-    
-    
+        this.lastname = lastname;
+        this.sex = sex;
+        this.parent1Id = parent1Id;
+        this.parent2Id = parent2Id;
+    }    
 }
+
+
+
+
+
+    
+
+    
+    
+

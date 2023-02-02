@@ -11,3 +11,9 @@ text.txt.lck
 .vs/Java/FileContentIndex/read.lock
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
+obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+obj/Debug/net6.0/Java.AssemblyInfo.cs
+obj/Debug/net6.0/Java.AssemblyInfoInputs.cache
+obj/Debug/net6.0/Java.csproj.AssemblyReference.cache
+obj/Debug/net6.0/Java.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/Java.GlobalUsings.g.cs
