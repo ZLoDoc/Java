@@ -64,6 +64,7 @@ public class Programm {public static void main(String[] args) {
    input.close();
 
    for (int index=0; index<allPerson.size();index++){
+    
     if (id == allPerson.get(index).pesonID){
         investigate = allPerson.get(index);
         System.out.printf("\nИсследуемый объект: %s\n", investigate.firstName+" "+investigate.lastname );
