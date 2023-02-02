@@ -19,6 +19,8 @@ public class Programm {public static void main(String[] args) {
    Person person8 = new Person(8, "Ирина Васильевна", "Пшеничникова","female", null, null);
    Person person9 = new Person(9, "Григорий Васильевич", "Пшеничников", "male", null, null);
    Person person10 = new Person(10, "Надежда Матвеевна", "Пшеничникова", "female", null, null);
+   Person person11 = new Person(11, "Екатерина Евгеневна", "Мельничук", "female", 6, 5);
+   Person person12 = new Person(12, "Владимир Петрович", "Батарев", "male", 6, 5);
 
 
    List<Person> allPerson = new ArrayList<>(Arrays.asList(person1,person2,person3,person4,person5,person6,person7,person8,person9,person10));
@@ -81,8 +83,15 @@ public class Programm {public static void main(String[] args) {
                     System.out.printf("\n -ваш внук - %s", allPerson.get(ind).firstName+" "+allPerson.get(ind).lastname);
                 }
             }
-    
-    
+        //Сестра брат
+            for(int index=0; index < allPerson.size();index++){               
+                if (allPerson.get(index).parent1Id == investigate.parent1Id && marriage.firstName != investigate.firstName && allPerson.get(index).sex.equals("male")) 
+                System.out.printf("\n- брат - %s",allPerson.get(index).firstName+" "+allPerson.get(index).lastname );                    
+                if (allPerson.get(index).parent1Id == investigate.parent1Id && marriage.firstName != investigate.firstName && allPerson.get(index).sex.equals("female")) 
+                System.out.printf("\n- сестра - %s",allPerson.get(index).firstName+" "+allPerson.get(index).lastname );                    
+                }
+
+            
 
 }   
 }
