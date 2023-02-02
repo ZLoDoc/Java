@@ -23,8 +23,8 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [pesonID=" + pesonID + ", firstName=" + firstName + ", lastname=" + lastname + ", parent1Id="
-                + parent1Id + ", parent2Id=" + parent2Id + "]";
+        return "Исследуемый объект: " + firstName +" "+ lastname + "\nПапа -"
+                + parent1Id + "\nМама-" + parent2Id + "]";
     }
     
     
