@@ -4,7 +4,7 @@ public class Person {
     Integer pesonID;
     String firstName;
     String lastname;
-    // String sex;
+    String sex;
     // Integer birthDay;
     Integer parent1Id;
     Integer parent2Id;
@@ -13,13 +13,18 @@ public class Person {
     public Person() {
     }
 
-    public Person(Integer pesonID, String firstName, String lastname, Integer parent1Id, Integer parent2Id) {
+
+    public Person(Integer pesonID, String firstName, String lastname, String sex, Integer parent1Id,
+            Integer parent2Id) {
         this.pesonID = pesonID;
         this.firstName = firstName;
         this.lastname = lastname;
+        this.sex = sex;
         this.parent1Id = parent1Id;
         this.parent2Id = parent2Id;
     }
+
+ 
 
     
     
