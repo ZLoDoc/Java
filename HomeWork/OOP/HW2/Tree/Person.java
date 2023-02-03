@@ -1,4 +1,4 @@
-package Seminar.Tree;
+package HomeWork.OOP.HW2.Tree;
 
 public class Person {
     Integer pesonID;
