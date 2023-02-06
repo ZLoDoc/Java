@@ -10,6 +10,11 @@ public class Relationship {
         Person2 = person2;
         RelationshipType = relationshipType;
     }
+
+    @Override
+    public String toString() {
+        return Person1.FirstName+" "+Person1.LastName+" "+RelationshipType;
+    }
     
     
 

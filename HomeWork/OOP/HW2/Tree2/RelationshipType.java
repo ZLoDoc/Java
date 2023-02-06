@@ -6,7 +6,15 @@ public enum RelationshipType {
     Husband,
     Wife,
     Son,
-    Daughter
+    Daughter,
+    Sister,
+    Tesha,
+    Test,    
+    Svecrov,
+    Svecr,
+    Grandmother,
+    Grandfather
+
 
     
 }

@@ -23,7 +23,7 @@ public class Programm {public static void main(String[] args) {
    Person person12 = new Person(12, "Владимир Петрович", "Батарев", "male", 6, 5);
 
 
-   List<Person> allPerson = new ArrayList<>(Arrays.asList(person1,person2,person3,person4,person5,person6,person7,person8,person9,person10));
+   List<Person> allPerson = new ArrayList<>(Arrays.asList(person1,person2,person3,person4,person5,person6,person7,person8,person9,person10,person11,person12));
    
 //    System.out.println(allPerson);
    
