@@ -47,7 +47,8 @@ public class Programm {
             new Relationship(person1, person4, RelationshipType.Daughter),
             new Relationship(person2, person4, RelationshipType.Daughter),
         };
-        System.out.println(relationships.length);
+        System.out.print("\033[H\033[J");
+        System.out.printf("Исследуемый объект - %s %s\n",person3.FirstName,person3.LastName);
 
         FindRelationship(relationships,person3,RelationshipType.Father);
         FindRelationship(relationships,person3, RelationshipType.Mother);

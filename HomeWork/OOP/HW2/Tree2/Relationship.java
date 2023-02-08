@@ -6,9 +6,9 @@ public class Relationship {
     RelationshipType RelationshipType;
     
     public Relationship(Person person1, Person person2,RelationshipType relationshipType) {
-        Person1 = person1;
-        Person2 = person2;
-        RelationshipType = relationshipType;
+        this.Person1 = person1;
+        this.Person2 = person2;
+        this.RelationshipType = relationshipType;
     }
 
     @Override
